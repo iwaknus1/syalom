@@ -1,0 +1,20 @@
+.bg-bg{
+    background-image: url('../asset/img/bg.png');
+        background-size: cover;
+        background-position: center;
+}
+
+.section {
+    margin: 20px 30px 30px 30px; /* Margin atas 20px, kiri-kanan 30px, dan bawah 30px */
+    text-align: justify; /* Membuat teks rata kanan-kiri (justified) */
+}
+
+p, ul {
+    margin-bottom: 20px; /* Memberikan jarak antar paragraf dan daftar */
+}
+
+.so {
+    display: block;
+    margin: 0 auto; /* Menempatkan gambar di tengah secara horizontal */
+    max-width: 100%; /* Agar gambar tidak lebih besar dari kontainer */
+}

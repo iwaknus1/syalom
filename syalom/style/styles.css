@@ -1,0 +1,195 @@
+body {
+    background-image: url('../asset/img/bg.png');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;    
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#content-wrapper {
+    position: relative;
+    z-index: 1; /* Membuat semua konten berada di depan latar belakang */
+}
+
+/* Pastikan semua elemen berada di dalam #content-wrapper */
+#top-banner, #new-banner, #menu-bar, footer {
+    z-index: 1;
+}
+
+#top-banner {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.logo-container {
+    padding-right: 10px;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-container ion-icon {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.text-container {
+    padding-top: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-container h1 {
+    font-size: 13px;
+}
+
+#new-banner {
+    position: relative;
+    text-align: right;
+    margin-top: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#new-banner .banner-image {
+    max-width: 100%;
+    height: auto;
+}
+
+#new-banner .banner-logo {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 150px;
+    z-index: 1;
+    width: 270px;
+}
+
+#menu-bar {
+    background-color: white;
+    box-shadow: 0 4px 2px -2px gray;
+    overflow: hidden;
+}
+
+#menu-bar ul {
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+}
+
+#menu-bar ul li {
+    float: left;
+}
+
+#menu-bar ul li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#menu-bar ul li a:hover {
+    background-color: #ffffff;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ccc;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    #top-banner {
+        text-align: left;
+    }
+
+    .logo-container, .text-container {
+        padding: 5px;
+    }
+
+    .text-container h1 {
+        font-size: 12px;
+    }
+    #new-banner .banner-logo {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        height: 90px;
+        z-index: 1;
+        width: 160px;
+    }
+}
+
+@media (max-width: 768px) {
+    #top-banner {
+        padding: 5px;
+    }
+
+    .logo-container ion-icon {
+        font-size: 25px;
+    }
+
+    .text-container h1 {
+        font-size: 11px;
+    }
+
+    #new-banner .banner-logo {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        height: 50px;
+        z-index: 1;
+        width: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-container ion-icon {
+        font-size: 20px;
+    }
+
+    .text-container h1 {
+        font-size: 10px;
+    }
+
+    #new-banner .banner-logo {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        height: 120px;
+        z-index: 1;
+        width: 240px;
+    }
+}
